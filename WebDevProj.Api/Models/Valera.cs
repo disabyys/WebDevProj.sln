@@ -2,6 +2,8 @@
 {
     public class Valera
     {
+        //primary key
+        public int Id { get; set; }
         //Properties
         public const int MaxHealth = 100;
         public const int MinHealth = 0;
@@ -13,6 +15,7 @@
         public const int MinFatigue = 0;
 
         private int _health = MaxHealth;
+
         public int Health
         {
             get => _health;
@@ -91,7 +94,7 @@
             Fatigue += 80;
             Money -= 150;
         }
-        public void SignInSubway()
+        public void SingInSubway()
         {
             if(Alcohol > 40 && Alcohol < 70)
             {
